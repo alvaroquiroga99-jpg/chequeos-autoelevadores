@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>CHEQUEOS DE AUTOELEVADORES</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" href="iskay-icon-192.png" />
   <style>
     body {
       margin: 0;
@@ -40,7 +43,6 @@
       opacity: 0.85;
     }
 
-    /* MOBILE */
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -139,5 +141,14 @@
     © ISKAY PRO – <a href="https://iskaypro.com.ar/" target="_blank">https://iskaypro.com.ar/</a>
   </footer>
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function (err) {
+          console.log('Service worker registration failed:', err);
+        });
+      });
+    }
+  </script>
 </body>
 </html>

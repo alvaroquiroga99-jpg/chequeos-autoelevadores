@@ -1,0 +1,21 @@
+{
+  "name": "CHEQUEOS DE AUTOELEVADORES",
+  "short_name": "Autoelevadores",
+  "description": "Checklist diario / por turno de autoelevadores según Res. 960/2015.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "iskay-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "iskay-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
